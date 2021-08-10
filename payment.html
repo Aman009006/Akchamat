@@ -1,0 +1,35 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акчамат</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/pay.css">
+</head>
+<body>
+    <div class="container header__contenet" >
+        <div class="header">
+            <p class="header__descr">Выдача микрозаема/p>
+        </div>
+        <form class="tabl" action="/payment_check" method="post">
+            <div class="number__in">
+                <label class="form__label" for="iin">ИНН</label>
+                <input placeholder="12345678912345" class="form__input" type="text" name="iin" id="iin" required pattern="[0-9]{14}" title="ИНН содержит 14 цифр">
+            </div>
+            <div class="number__in">
+                <label class="form__label" for="phone">Номер телефона</label>
+                <input placeholder="500123456" class="form__input" type="text" name="phone" id="phone" required pattern="^[0-9]{9}" title='Введит номер без "0" и без "996"'>
+            </div>
+            <div class="number__in">
+                <label class="form__label" for="code">Одноразовый код</label>
+                <input placeholder="11112222" class="form__input" type="text" name="code" id="code" required pattern="^[0-9]{8}" title='Одноразовый код состоит только из 8 символов'>
+            </div>
+            <div class="number__btn btn">
+            <input class="form__btn" type="submit" value="Проверить данные">
+            
+            </div>
+        </form>
+    </div>

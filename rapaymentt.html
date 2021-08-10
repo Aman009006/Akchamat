@@ -1,0 +1,31 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./pay.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container header__contenet" >
+        <div class="header">
+            <p class="header__descr">Погашение кредита</p>
+        </div>
+        <form class="tabl" action="/check" method="post">
+            <div class="number__in">
+                <label class="form__label" for="iin">ИИН</label>
+                <input placeholder="12345678912345" class="form__input" type="text" name="iin" id="iin">
+            </div>
+            <div class="number__in">
+                <label class="form__label" for="nomer">Номер телефона</label>
+                <input placeholder="+996 (700) 155 155" class="form__input" type="text" name="phone" id="phone">
+            </div>
+            <div class="number__btn btn">
+            <input class="form__btn" type="submit" value="Проверить данные">
+            <img src="" alt="">
+            </div>
+        </form>
+    </div>

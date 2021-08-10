@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body{
+      background-image: url(../images/Desktop\ -\ 5.png);
+      padding: 0px;
+      margin: 0px;
+      font-family: "Kumbh Sans", sans-serif;
+    }
+    

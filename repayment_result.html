@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Акчамат</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,300;0,400;0,600;1,200;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="static/css/result.css">
+</head>
+<body>
+    <div class="container header__contenet" >
+        <div class="header">
+            <p class="header__descr">Результаты</p>
+        </div>
+        <form action="/repayment_pay" method="post" class="tabl">
+
+            <div class="micro__info">
+                <label for="fio">ФИО</label>
+                <input type="text" name="fio" id="fio" readonly value="{{fio}}">
+            </div>
+
+            <div class="micro__info">
+                <label for="credit_sum">Сумма кредита</label>
+                <input type="text" name="credit_sum" id="credit_sum" readonly value="{{credit_sum}}">
+            </div>
+
+            <div class="micro__info">
+                <label for="credit_days">Дней заема</label>
+                <input type="text" name="credit_days" id="credit_days" readonly value="{{credit_days}}">
+            </div>
+
+            <div class="micro__info">
+                <label for="sum_for_long">Дней продления</label>
+                <input type="text" name="sum_for_long" id="sum_for_long" readonly value="{{sum_for_long}}">
+            </div>
+
+            <div class="micro__info">
+                <label for="iin">ИНН</label>
+                <input type="text" name="iin" id="iin" readonly value="{{iin}}">
+            </div>
+
+            <div class="micro__info">
+                <label for="phone">Номер телефона</label>
+                <input type="text" name="phone" id="phone" readonly value="{{phone}}">
+            </div>
+            <div class="sum">
+                <label for="sum">Сумма оплаты</label>
+                <input type="number" name="sum" id="sum" required placeholder="{{credit_sum}}" min=1>
+            </div>
+            <div class="number__btn btn">
+                <input class="form__btn" type="submit" value="Принять погашение">
+                
+            </div>
+        </form>
+    </div>
+
+</body>
+</html>
